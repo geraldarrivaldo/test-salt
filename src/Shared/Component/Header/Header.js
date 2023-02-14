@@ -9,59 +9,11 @@ function Header() {
   const context = useContext(AppContext);
 
   return (
-    // <header fixed="top">
-    //   <Navbar bg="light" variant="light" expand="xl" fixed="top">
-    //     <Navbar.Brand href="/">
-    //       <img src={Logo} className="ml-3" width={126} alt="CompanyLogo" />
-    //     </Navbar.Brand>
-    //     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    //     <Navbar.Collapse id="basic-navbar-nav">
-    //       <Nav className="me-auto">
-    //         <Nav.Link
-    //           // onClick={() =>
-    //           //   AboutUs.current.scrollIntoView({
-    //           //     behavior: "smooth",
-    //           //     block: "start",
-    //           //   })
-    //           // }
-    //           className="ms-3"
-    //         >
-    //           About Us
-    //         </Nav.Link>
-    //         <Nav.Link
-    //           // onClick={() =>
-    //           //   OurCore.current.scrollIntoView({
-    //           //     behavior: "smooth",
-    //           //     block: "start",
-    //           //   })
-    //           // }
-    //           className="ms-3"
-    //         >
-    //           Our Core Values
-    //         </Nav.Link>
-    //         <Nav.Link
-    //           // onClick={() =>
-    //           //   OurSpeciality.current.scrollIntoView({
-    //           //     behavior: "smooth",
-    //           //     block: "start",
-    //           //   })
-    //           // }
-    //           className="ms-3"
-    //         >
-    //           Our Speciality
-    //         </Nav.Link>
-    //       </Nav>
-    //     </Navbar.Collapse>
-    //   </Navbar>
-    // </header>
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white mb-3 ">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-[#777777]"
-              href="#pablo"
-            >
+            <a className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-[#777777]">
               <img src={Logo} className="ml-3" width={126} alt="CompanyLogo" />
             </a>
             <button
@@ -83,7 +35,6 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-[#777777] hover:opacity-75"
-                  href="#pablo"
                   onClick={() => {
                     context.setNavSub("about");
                   }}
@@ -94,7 +45,6 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-[#777777] hover:opacity-75"
-                  href="#pablo"
                   onClick={() => {
                     context.setNavSub("core");
                   }}
@@ -105,7 +55,6 @@ function Header() {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-[#777777] hover:opacity-75"
-                  href="#pablo"
                   onClick={() => {
                     context.setNavSub("special");
                   }}

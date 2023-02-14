@@ -38,7 +38,7 @@ function AboutUs() {
   return (
     <>
       <div id="about" className="pt-20 container mx-auto flex justify-center">
-        <div className="lg:w-1/2 w-full ">
+        <div className="lg:w-1/2 w-[90%] ">
           <Carousel showArrows={true} autoPlay={true} infiniteLoop={true}>
             {content.map((data, index) => {
               return (

@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import Logo from "../../../assets/logo-footer.png";
 import AppContext from "../AppContext";
 
@@ -32,11 +33,33 @@ function Footer() {
             <div className="flex justify-center self-center">
               <img src={Logo} className="w-1/2" width={250} height={100} />
             </div>
-            <div className="bg-white flex justify-center rounded-lg px-2 py-5">
-              <span className="text-[#25A0D8] text-center">
-                Jl. Lembong No 8 Kel. Braga Kec. Sumur Bandung, Kota Bandung,
-                Jawa Barat
-              </span>
+            <div>
+              <div className="bg-white flex justify-center rounded-lg px-2 py-5">
+                <div>
+                  <span className="text-[#25A0D8] text-center">
+                    Jl. Lembong No 8 Kel. Braga Kec. Sumur Bandung, Kota
+                    Bandung, Jawa Barat
+                  </span>
+                </div>
+              </div>
+              <div className="flex pt-5 text-white justify-center">
+                <div className="pr-3">
+                  <a
+                    href="https://www.instagram.com/salt.indonesia/?hl=en"
+                    target="_blank"
+                  >
+                    <FaInstagram className="cursor-pointer" size={40} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href="https://www.linkedin.com/company/salt-indonesia/"
+                    target="_blank"
+                  >
+                    <FaLinkedin className="cursor-pointer" size={40} />
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="text-lg font-bold  text-white flex flex-col text-center justify-center">
               <label
